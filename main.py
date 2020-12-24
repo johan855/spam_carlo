@@ -9,8 +9,8 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 
-driver = webdriver.Chrome("location_to/chromedriver.exe")
-bs_driver = webdriver.Chrome("location_to/chromedriver.exe")
+driver = webdriver.Chrome("C:/Users/Johan/PycharmProjects/spam_carlo/chromedriver.exe")
+bs_driver = webdriver.Chrome("C:/Users/Johan/PycharmProjects/spam_carlo/chromedriver.exe")
 
 driver.get("https://web.whatsapp.com/")
 wait = WebDriverWait(driver, 600)
