@@ -30,7 +30,7 @@ bs_xpath = '/html/body/div[7]/button'
 bs_xpath_title = '//*[@id="main-heading"]'
 
 for i in range(patience):
-    bs_driver.find_element_by_xpath(bs_xpath_reroll).click()
+    bs_driver.find_element_by_xpath(bs_xpath).click()
     string = bs_driver.find_element_by_xpath(bs_xpath_title).text
     input_box.send_keys(string.format(i) + Keys.ENTER)
     time.sleep(10)
